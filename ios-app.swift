@@ -28,8 +28,12 @@ class ViewController: UIViewController {
 
     // Fonction appelée lorsque le bouton est appuyé
     @objc func buttonTapped() {
-        print("TELEGRAM BOT bouton appuyé !")
-        // Ajoutez ici le code que vous souhaitez exécuter lorsque le bouton est appuyé
+        print("TELEGRAM BOT !")
+        
+        // Ajoutez ici le code pour ouvrir le lien Telegram
+        if let url = URL(string: "https://t.me/votre_lien_telegram") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
 }
 
