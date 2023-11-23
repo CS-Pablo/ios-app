@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     // Fonction pour configurer l'interface utilisateur
     func setupUI() {
         let button = UIButton(type: .system)
-        button.setTitle("Appuyez-moi", for: .normal)
+        button.setTitle("TELEGRAM BOT", for: .normal)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 
         view.addSubview(button)
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
     // Fonction appelée lorsque le bouton est appuyé
     @objc func buttonTapped() {
-        print("Bouton appuyé !")
+        print("TELEGRAM BOT bouton appuyé !")
         // Ajoutez ici le code que vous souhaitez exécuter lorsque le bouton est appuyé
     }
 }
